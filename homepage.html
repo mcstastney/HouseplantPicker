@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Houseplant picker</title>
+</head>
+<body>
+    <section id="welcome">
+  
+        <!-- div for a column with 100% width -->
+        <div class="row">
+          <div class="col-12">
+            <h1>🎍 Planty McPlantface 🎍</h1>
+          </div>
+        </div>
+        
+        <div class="row">
+        <!-- div for a column with 58.33% width -->  
+          <div class="col-7" id="introText">
+            <h2>Personalised plant pairing for your home</h2>
+            <p><b>As well as looking good, houseplants support health in homes, offices, school and hospitals.</b></p>
+            <p>Research suggests that the greatest benefits of indoor plants are through wellbeing and productivity improvement. We've put together a range of plants, which can be grown in homes, schools and offices.</p> 
+            <p>Use our personal picker to find the perfect houseplant for each room in your home.</p>
+            <button id="quizButton">Take the quiz</button>
+          </div>
+      
+           <!-- div for a column with 41.66% width -->  
+          <div class="col-5">
+            <img id="homepageImage" src="https://1and1life-cdn.s3.us-east-2.amazonaws.com/wp-content/uploads/2021/11/10051258/woman-planting.jpg">
+          </div> 
+        </div>    
+        
+      </section>
+      
+      
+      <section id="quiz">
+        
+       <div class="row">
+         <div class="col-12"> 
+            <h1>Plant Picker Quiz</h1>
+         </div>
+         <!-- div for a column with 50% width -->  
+         <div class="col-6">
+            <img id="quizImage" src="https://www.houseofthol.nl/uploads/8/8/8/1/88814342/waterworks-thomas-blue-wall-web-square_orig.jpg">
+         </div> 
+         
+         <!-- div for a column with 50% width -->  
+         <div class="col-6" id="questions">
+           <h2>Take the quiz</h2>
+            <label for="size">What size plant do you want?</label>
+              <input type=radio id="sizeBig" name="size" value="Big" required>Big</input>
+              <input type=radio id="sizeSmall" name="size" value="Small" required>Small</input>
+            <br>
+      
+            <label for="lightSunny lightShade">What's the lighting like in the room?</label>
+              <input type=radio id="lightSunny" name="light" value="Sunny" required>Sunny</input>
+              <input type=radio id="lightShade" name="light" value="Shady" required>Shady</input>
+            <br>
+      
+            <label for="careBeginner careExpert">What's your level of plant expertise?</label>
+              <input type=radio id="careBeginner" name="care" value="Beginner" required>Beginner</input>
+              <input type=radio id="careExpert" name="care" value="Expert" required>Expert</input>
+            <br>
+      
+            <button id="resultsButton">Get recommendations</button>
+          </div>
+        </div>
+      
+      </section>  
+      
+      <section id="results">
+        
+       <div class="row">
+         <div class="col-12">   
+            <h1>Your results</h1>
+         </div> 
+         
+         <!-- div for a column with 58.33% width -->
+         <div class="col-7" id="resultsText">
+            <h3 id="recommendedPlantName"></h3>
+              <p id="plantDescription"></p>
+                <button id="shopButton">Shop now</button>  
+                <button id="retakeButton">Retake quiz</button>
+         </div>
+         
+          <!-- div for a column with 41.66% width -->  
+         <div class="col-5">
+           <img id="imagePlaceholder"> 
+         </div>
+       </div>  
+      
+      </section>
+      
+      </body>
+      </html>
+</body>
+</html>
+<script src="script.js"></script>
